@@ -12,6 +12,38 @@ Vue是一套用于构建用户界面的渐进式框架。在我写下这篇文�
 ### What is NativeScript-Vue?
 用[社区文档][3]的定义来说就是一个允许你用vue.js去开发原生应用的插件。
 
+#### 项目结构：
+```
+app
+ |---api
+      |---api               // 请求的接口
+ |---App_Resources          // ios或android特定的资源(可暂时不管)
+      |---Android
+      |---iOS
+ |---components             // 应用的各个组件
+      |---cinema-list       // 电影院列表
+      |---col-list          // 纵向列表
+      |---coming-list       // 即将上映列表
+      |---loading           // 加载过渡页面
+      |---more-list         // 更多电影列表
+ |---images                 // 图片资源
+ |---router                 // 路由
+      |---index
+ |---views                  // 各个页面
+      |---cinemas           // 电影院页面
+      |---detail            // 电影简介页面
+      |---home              // 首页
+      |---more              // 更多电影页面
+ |---app.css                // 全局css样式
+ |---app.js                 // app入口文件 
+hooks
+platforms
+ |---android                // 编译生成的代码
+```
+####技术栈
+- nativescript-vue
+- vue-router
+
 #### 效果图
 ![](https://github.com/HolyZheng/nativescript-vue-build-a-movie-brief-app/blob/master/gif/nv_one.gif)
 
